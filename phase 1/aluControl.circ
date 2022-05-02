@@ -62,9 +62,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   </toolbar>
   <circuit name="main">
     <a name="circuit" val="main"/>
-    <a name="clabel" val=""/>
-    <a name="clabelup" val="east"/>
+    <a name="clabel" val="aluControl"/>
+    <a name="clabelup" val="north"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <path d="M156,74 Q149,96 140,74" fill="none" stroke="#808080" stroke-width="2"/>
+      <ellipse cx="148.5" cy="132.0" fill="none" rx="50.5" ry="60.0" stroke="#000000"/>
+      <circ-port height="8" pin="200,210" width="8" x="96" y="106"/>
+      <circ-port height="8" pin="260,350" width="8" x="146" y="186"/>
+      <circ-port height="10" pin="960,230" width="10" x="195" y="135"/>
+      <circ-anchor facing="east" height="6" width="6" x="97" y="107"/>
+    </appear>
     <wire from="(710,310)" to="(710,320)"/>
     <wire from="(710,330)" to="(710,340)"/>
     <wire from="(790,310)" to="(840,310)"/>
@@ -87,6 +95,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(790,270)" to="(790,310)"/>
     <wire from="(690,310)" to="(710,310)"/>
     <wire from="(690,330)" to="(710,330)"/>
+    <wire from="(430,230)" to="(960,230)"/>
     <wire from="(380,220)" to="(400,220)"/>
     <wire from="(540,310)" to="(570,310)"/>
     <wire from="(540,330)" to="(570,330)"/>
@@ -101,53 +110,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(710,340)" to="(720,340)"/>
     <wire from="(570,320)" to="(580,320)"/>
     <wire from="(570,340)" to="(580,340)"/>
-    <comp lib="2" loc="(610,330)" name="Multiplexer">
+    <comp lib="0" loc="(960,230)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
       <a name="width" val="3"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(690,310)" name="Constant">
-      <a name="width" val="3"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="2" loc="(750,330)" name="Multiplexer">
-      <a name="width" val="3"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(430,230)" name="Multiplexer">
-      <a name="width" val="3"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(300,350)" name="Splitter">
-      <a name="fanout" val="3"/>
-      <a name="incoming" val="3"/>
-      <a name="appear" val="right"/>
-    </comp>
-    <comp lib="0" loc="(690,330)" name="Constant">
-      <a name="width" val="3"/>
-      <a name="value" val="0x4"/>
-    </comp>
-    <comp lib="0" loc="(540,330)" name="Constant">
-      <a name="width" val="3"/>
-      <a name="value" val="0x5"/>
-    </comp>
-    <comp lib="0" loc="(540,310)" name="Constant">
-      <a name="width" val="3"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="2" loc="(870,320)" name="Multiplexer">
-      <a name="width" val="3"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(260,350)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ALUOp from control unit / we consider it 3 bits because we have 8to1 mux"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(200,210)" name="Pin">
-      <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="funct"/>
+      <a name="label" val="opSEL"/>
       <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(260,230)" name="Splitter">
@@ -156,6 +123,54 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit1" val="0"/>
       <a name="bit2" val="0"/>
       <a name="bit3" val="1"/>
+    </comp>
+    <comp lib="0" loc="(260,350)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ALUOp from control unit / we consider it 3 bits because we have 8to1 mux"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="2" loc="(750,330)" name="Multiplexer">
+      <a name="width" val="3"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(540,310)" name="Constant">
+      <a name="width" val="3"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(300,350)" name="Splitter">
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp lib="2" loc="(610,330)" name="Multiplexer">
+      <a name="width" val="3"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(430,230)" name="Multiplexer">
+      <a name="width" val="3"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(870,320)" name="Multiplexer">
+      <a name="width" val="3"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(540,330)" name="Constant">
+      <a name="width" val="3"/>
+      <a name="value" val="0x2"/>
+    </comp>
+    <comp lib="0" loc="(200,210)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="funct"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(690,330)" name="Constant">
+      <a name="width" val="3"/>
+    </comp>
+    <comp lib="0" loc="(690,310)" name="Constant">
+      <a name="width" val="3"/>
+      <a name="value" val="0x0"/>
     </comp>
   </circuit>
 </project>
