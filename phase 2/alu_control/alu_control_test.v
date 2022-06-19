@@ -39,6 +39,8 @@ module alu_control_test;
 	);
 
 	initial begin
+	
+		//opcode can be 1 , 2 ,4
 		// Initialize Inputs
 		ops = 0;
 		func = 0;
@@ -47,12 +49,17 @@ module alu_control_test;
 		#100;
         
 		// Add stimulus here
-		ops=3;
+		ops=1;
 		func=6;
 		#100;
 		
-		ops=1;
-		func=10;
+		ops = 2;
+		func = 6;
+		#100;
+		
+		ops=4;
+		func = 3;
+		#100;
 
 	end
       

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-06-19T06:01:19</DateModified>
+  <DateModified>2022-06-19T17:44:35</DateModified>
   <ModuleName>INS_MEM_M</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>G:/ISE_project/alu/INS_MEM/iseconfig/INS_MEM_M.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>G:/ISE_project/alu/INS_MEM\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/saman/Documents/Programming/SAMAB_CPU/phase 2/INS_MEM/iseconfig/INS_MEM_M.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/saman/Documents/Programming/SAMAB_CPU/phase 2/INS_MEM\</ImplementationReportsDirectory>
   <DateInitialized>2022-06-19T05:50:00</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

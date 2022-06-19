@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module alu_control_M(ops,func,aluop
     );
-	 input [2:0]aps;
+	 input [2:0]ops;
 	 input [3:0]func;
 	 wire [2:0]sec=ops;
 	 
@@ -29,7 +29,8 @@ module alu_control_M(ops,func,aluop
 	 integer temp3;
 	 
 	 output reg[2:0]aluop;
-	  
+	 
+	 /*
 	 always @*
 	 begin
 	 if(ops[0]==1)
@@ -50,8 +51,19 @@ module alu_control_M(ops,func,aluop
 	 else
 		aluop=temp3;
 	 end
-	 endmodule
-	 
-
+	 */
+	 always @*
+	 begin
+		if(ops[0] == 1)
+			aluop = 2;
+		if(ops[1] == 1)
+			aluop = 1;
+		if(ops[2] == 1)
+			begin
+			aluop[0] = func[0];
+			aluop[1] = func[1];
+			aluop[2] = func[2];
+			end
+	 end
 
 endmodule

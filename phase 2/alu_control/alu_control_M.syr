@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: alu_control_M.prj
 
@@ -105,23 +105,225 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "G:\ISE_project\alu\alu_control\alu_control_M.v" into library work
+Analyzing Verilog file "C:\Users\saman\Documents\Programming\SAMAB_CPU\phase 2\alu_control\alu_control_M.v" into library work
 Parsing module <alu_control_M>.
-ERROR:HDLCompiler:69 - "G:\ISE_project\alu\alu_control\alu_control_M.v" Line 21: <ops> is not declared.
-ERROR:HDLCompiler:715 - "G:\ISE_project\alu\alu_control\alu_control_M.v" Line 23: Port aps is not defined
-ERROR:HDLCompiler:69 - "G:\ISE_project\alu\alu_control\alu_control_M.v" Line 25: <ops> is not declared.
-ERROR:HDLCompiler:69 - "G:\ISE_project\alu\alu_control\alu_control_M.v" Line 35: <ops> is not declared.
-ERROR:HDLCompiler:69 - "G:\ISE_project\alu\alu_control\alu_control_M.v" Line 40: <ops> is not declared.
-ERROR:HDLCompiler:69 - "G:\ISE_project\alu\alu_control\alu_control_M.v" Line 44: <ops> is not declared.
-ERROR:HDLCompiler:69 - "G:\ISE_project\alu\alu_control\alu_control_M.v" Line 48: <ops> is not declared.
-ERROR:HDLCompiler:598 - "G:\ISE_project\alu\alu_control\alu_control_M.v" Line 21: Module <alu_control_M> ignored due to previous errors.
-ERROR:HDLCompiler:806 - "G:\ISE_project\alu\alu_control\alu_control_M.v" Line 57: Syntax error near "endmodule".
-Verilog file G:\ISE_project\alu\alu_control\alu_control_M.v ignored due to errors
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <alu_control_M>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <alu_control_M>.
+    Related source file is "C:\Users\saman\Documents\Programming\SAMAB_CPU\phase 2\alu_control\alu_control_M.v".
+WARNING:Xst:647 - Input <func<3:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 1-bit latch for signal <aluop<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aluop<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aluop<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   3 Latch(s).
+	inferred   3 Multiplexer(s).
+Unit <alu_control_M> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 3
+ 1-bit latch                                           : 3
+# Multiplexers                                         : 3
+ 1-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multiplexers                                         : 3
+ 1-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <alu_control_M> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block alu_control_M, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : alu_control_M.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 4
+#      LUT2                        : 1
+#      LUT3                        : 3
+# FlipFlops/Latches                : 3
+#      LD                          : 3
+# IO Buffers                       : 9
+#      IBUF                        : 6
+#      OBUF                        : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                    4  out of  63400     0%  
+    Number used as Logic:                 4  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      4
+   Number with an unused Flip Flop:       4  out of      4   100%  
+   Number with an unused LUT:             0  out of      4     0%  
+   Number of fully used LUT-FF pairs:     0  out of      4     0%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          10
+ Number of bonded IOBs:                   9  out of    210     4%  
+    IOB Flip Flops/Latches:               3
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------+------------------------+-------+
+Clock Signal                                       | Clock buffer(FF name)  | Load  |
+---------------------------------------------------+------------------------+-------+
+GND_1_o_GND_1_o_OR_33_o(GND_1_o_GND_1_o_OR_33_o1:O)| NONE(*)(aluop_2)       | 3     |
+---------------------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 0.623ns
+   Maximum output required time after clock: 0.751ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_1_o_GND_1_o_OR_33_o'
+  Total number of paths / destination ports: 8 / 3
+-------------------------------------------------------------------------
+Offset:              0.623ns (Levels of Logic = 2)
+  Source:            ops<2> (PAD)
+  Destination:       aluop_1 (LATCH)
+  Destination Clock: GND_1_o_GND_1_o_OR_33_o falling
+
+  Data Path: ops<2> to aluop_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.001   0.525  ops_2_IBUF (ops_2_IBUF)
+     LUT3:I0->O            1   0.097   0.000  Mmux_aluop[2]_func[1]_MUX_9_o11 (aluop[2]_func[1]_MUX_9_o)
+     LD:D                     -0.028          aluop_1
+    ----------------------------------------
+    Total                      0.623ns (0.098ns logic, 0.525ns route)
+                                       (15.7% logic, 84.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'GND_1_o_GND_1_o_OR_33_o'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            aluop_2 (LATCH)
+  Destination:       aluop<2> (PAD)
+  Source Clock:      GND_1_o_GND_1_o_OR_33_o falling
+
+  Data Path: aluop_2 to aluop<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  aluop_2 (aluop_2)
+     OBUF:I->O                 0.000          aluop_2_OBUF (aluop<2>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.20 secs
+ 
 --> 
 
-Total memory usage is 4497948 kilobytes
+Total memory usage is 4617556 kilobytes
 
-Number of errors   :    9 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 

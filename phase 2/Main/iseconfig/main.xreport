@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-06-19T06:01:54</DateModified>
+  <DateModified>2022-06-19T17:45:07</DateModified>
   <ModuleName>main</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>G:/ISE_project/alu/Main/iseconfig/main.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>G:/ISE_project/alu/Main</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/saman/Documents/Programming/SAMAB_CPU/phase 2/Main/iseconfig/main.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/saman/Documents/Programming/SAMAB_CPU/phase 2/Main\</ImplementationReportsDirectory>
   <DateInitialized>2022-06-19T06:01:54</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
