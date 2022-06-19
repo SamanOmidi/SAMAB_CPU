@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "G:/ISE_project/alu/datamem/datamem.xst" -ofn "G:/ISE_project/alu/datamem/datamem.syr" 

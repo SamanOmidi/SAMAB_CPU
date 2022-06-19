@@ -1,0 +1,8 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o G:/ISE_project/alu/control_unit/control_unit_test_isim_beh.exe -prj G:/ISE_project/alu/control_unit/control_unit_test_beh.prj work.control_unit_test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "G:/ISE_project/alu/control_unit/control_unit_M.v" into library work
+ERROR:HDLCompiler:806 - "G:/ISE_project/alu/control_unit/control_unit_M.v" Line 86: Syntax error near "endmodule".
+Verilog file G:/ISE_project/alu/control_unit/control_unit_M.v ignored due to errors
