@@ -3,11 +3,11 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Sun Jun 19 05:19:01 2022">
+<application name="pn" timeStamp="Sun Jun 19 17:30:52 2022">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="7E154345334941AFA4DA7F03C54E6303" type="project"/>
 <property name="ProjectIteration" value="0" type="project"/>
-<property name="ProjectFile" value="G:/ISE_project/alu/control_unit/control_unit.xise" type="project"/>
+<property name="ProjectFile" value="C:/Users/saman/Documents/Programming/SAMAB_CPU/phase 2/control_unit/control_unit.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2022-06-19T04:26:02" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">

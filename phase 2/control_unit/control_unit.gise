@@ -25,15 +25,24 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="control_unit_M.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="control_unit_M.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="control_unit_M.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="control_unit_M.ngr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="control_unit_M.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="control_unit_M.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="control_unit_M.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="control_unit_M.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="control_unit_M_envsettings.html"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="control_unit_M_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="control_unit_M_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="control_unit_test_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="control_unit_test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="control_unit_test_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="control_unit_test_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
-    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
@@ -42,7 +51,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1655599749" xil_pn:in_ck="-6212466785016533165" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1655599749">
+    <transform xil_pn:end_ts="1655643696" xil_pn:in_ck="-6212466785016533165" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1655643696">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="control_unit_M.v"/>
@@ -60,15 +69,26 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1655599751" xil_pn:in_ck="-6212466785016533165" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1655599751">
+    <transform xil_pn:end_ts="1655643699" xil_pn:in_ck="-6212466785016533165" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1655643699">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="control_unit_M.v"/>
       <outfile xil_pn:name="control_unit_test.v"/>
     </transform>
-    <transform xil_pn:end_ts="1655599753" xil_pn:in_ck="-6212466785016533165" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7698911723964478469" xil_pn:start_ts="1655599751">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1655643702" xil_pn:in_ck="-6212466785016533165" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7698911723964478469" xil_pn:start_ts="1655643699">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="control_unit_test_beh.prj"/>
+      <outfile xil_pn:name="control_unit_test_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1655643702" xil_pn:in_ck="418325395872105838" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2284529003857102274" xil_pn:start_ts="1655643702">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="control_unit_test_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
     </transform>
     <transform xil_pn:end_ts="1655598625" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1655598625">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -98,12 +118,16 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1655599747" xil_pn:in_ck="-2720452237383486416" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-7393786065989949146" xil_pn:start_ts="1655599741">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1655643662" xil_pn:in_ck="-2720452237383486416" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-7393786065989949146" xil_pn:start_ts="1655643651">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="control_unit_M.lso"/>
+      <outfile xil_pn:name="control_unit_M.ngc"/>
+      <outfile xil_pn:name="control_unit_M.ngr"/>
       <outfile xil_pn:name="control_unit_M.prj"/>
+      <outfile xil_pn:name="control_unit_M.stx"/>
       <outfile xil_pn:name="control_unit_M.syr"/>
       <outfile xil_pn:name="control_unit_M.xst"/>
       <outfile xil_pn:name="control_unit_M_xst.xrpt"/>

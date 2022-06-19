@@ -79,8 +79,6 @@ module control_unit_M(opcode,branch,regdst,alusrc,regwrite,memread,memreg,memwri
 				memwrite=0;
 				aluop=1;
 			end
+		end
 		
-	 
-
-
 endmodule

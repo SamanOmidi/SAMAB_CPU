@@ -48,7 +48,7 @@ module control_unit_test;
 		.regwrite(regwrite),
 		.memread(memread),
 		.memreg(memreg),
-		.memweite(memwrite),
+		.memwrite(memwrite),
 		.aluop(aluop),
 		.clk(clk)
 	);
