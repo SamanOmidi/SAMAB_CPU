@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/saman/Documents/Programming/SAMAB_CPU/phase 2/alu_control/alu_control_test_isim_beh.exe" -prj "C:/Users/saman/Documents/Programming/SAMAB_CPU/phase 2/alu_control/alu_control_test_beh.prj" "work.alu_control_test" "work.glbl" 
